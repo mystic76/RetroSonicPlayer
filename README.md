@@ -23,7 +23,7 @@ ___
 
 This project is fork of: [RetroMusic](https://github.com/RetroMusicPlayer/RetroMusicPlayer) with usage Subsonic API library: [apisonic](https://github.com/henningBunk/apisonic)
 
-## ⚠ Work still in progress
+## ⚠ Depricated. Watch new developed from scratch player with Material You design: [youAMP](https://github.com/siper/YouAMP)
 ___
 
 ## 📱 Screenshots
