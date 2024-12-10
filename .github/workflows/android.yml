@@ -32,3 +32,19 @@ jobs:
       - uses: gradle/gradle-build-action@v2
       - name: Build
         run: ./gradlew app:assemble
+
+      - name: zip apks
+        run: zip -r /home/runner/work/RetroSonicPlayer/RetroSonicPlayer/builds.zip /home/runner/work/RetroSonicPlayer/RetroSonicPlayer/app/build/outputs
+
+
+      - name: Upload apks
+        uses: actions/upload-artifact@v3
+        with:
+          name: app-release
+          path: /home/runner/work/RetroSonicPlayer/RetroSonicPlayer/builds.zip
+
+      - name: Upload 
+        uses: actions/upload-artifact@v3
+        with:
+          name: release
+          path: /home/runner/work/RetroSonicPlayer/RetroSonicPlayer/builds.zip
